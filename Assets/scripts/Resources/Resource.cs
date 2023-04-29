@@ -18,8 +18,20 @@ public class Resource : MonoBehaviour
 
     void Start()
     {
-        OnValueChanged = new UnityEvent();
-        SetValue(startValue);
+        Reset();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            IncreaseValue(0.1f);
+        }
+    }
+
+    public float Reset()
+    {
+        return SetValue(startValue);
     }
 
     public float IncreaseValue(float value)
