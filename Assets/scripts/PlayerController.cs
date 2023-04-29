@@ -24,9 +24,12 @@ public class PlayerController : MonoBehaviour
         instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(float damage)
     {
-        
+        //TODO: Mods
+        //TODO: Effect on hit
+        //TODO: Car breaking down when dead
+        //TODO: Zombies swarm car when broken down
+        health.DecreaseValue(damage);
     }
 }

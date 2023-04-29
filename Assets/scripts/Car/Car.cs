@@ -11,8 +11,7 @@ public class Car : MonoBehaviour
     [SerializeField] private float baseSteeringAngle = 25.0f;
     [SerializeField] private bool accelerateIsBrake = true;
 
-    private bool isDriving = false;
-    private bool isBraking = false;
+    public Vector3 CurrentSpeed { get; private set; }
 
     new Rigidbody rigidbody;
     // Start is called before the first frame update
@@ -27,6 +26,8 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        CurrentSpeed = transform.InverseTransformDirection(rigidbody.velocity);
+        Debug.Log(CurrentSpeed);
         Accelerate(Input.GetAxisRaw("Drive"));
         Steer(Input.GetAxisRaw("Horizontal"));
 
@@ -49,12 +50,9 @@ public class Car : MonoBehaviour
         
         if (accelerateIsBrake)
         {
-            var locVel = transform.InverseTransformDirection(rigidbody.velocity);
-            Debug.Log(locVel.z);
-            if ((locVel.z > 0.01 && value < 0) || 
-                (locVel.z < -0.01 && value > 0))
+            if ((CurrentSpeed.z > 0.01 && value < 0) || 
+                (CurrentSpeed.z < -0.01 && value > 0))
             {
-                Debug.Log("Braking");
                 Brake(value);
                 foreach (Wheel wheel in wheels)
                 {
@@ -64,14 +62,12 @@ public class Car : MonoBehaviour
             } 
             else
             {
-                Debug.Log("Driving");
                 Brake(0);
                 foreach (Wheel wheel in wheels)
                 {
                     wheel.SetSpeed(baseAccelerationForce * value);
                 }
             }
-            Debug.Log("------------------");
         }
         else
         {
