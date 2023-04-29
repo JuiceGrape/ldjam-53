@@ -16,7 +16,7 @@ public class Car : MonoBehaviour
     void Start()
     {
         wheels = GetComponentsInChildren<Wheel>();
-        
+        GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -0.1f, 0);
     }
 
     // Update is called once per frame

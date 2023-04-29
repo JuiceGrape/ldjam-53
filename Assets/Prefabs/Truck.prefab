@@ -229,7 +229,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_Stiffness: 3
   m_Enabled: 1
 --- !u!114 &4122773875460079198
 MonoBehaviour:
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wheelMesh: {fileID: 5959007713889786166}
   canSteer: 0
-  hasPower: 0
+  hasPower: 1
 --- !u!1 &4122773875620707628
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_Stiffness: 2
   m_Enabled: 1
 --- !u!114 &4122773875620707630
 MonoBehaviour:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db777ad350eea74197c8f58ff390ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseAccelerationForce: 300
+  baseAccelerationForce: 500
   baseBrakingForce: 500
   baseSteeringAngle: 15
 --- !u!54 &4122773876993877199
@@ -402,8 +402,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.29465234, z: 1.6988306}
-  m_Center: {x: 0, y: 0.17561501, z: 0.17116451}
+  m_Size: {x: 0.8, y: 0.29465234, z: 1.545315}
+  m_Center: {x: 0, y: 0.17561501, z: 0.24792233}
 --- !u!1 &4122773877124927663
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_Stiffness: 2
   m_Enabled: 1
 --- !u!114 &4122773877124927665
 MonoBehaviour:
@@ -543,7 +543,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_Stiffness: 3
   m_Enabled: 1
 --- !u!114 &4122773877210357267
 MonoBehaviour:
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wheelMesh: {fileID: 1642545079159118409}
   canSteer: 0
-  hasPower: 0
+  hasPower: 1
 --- !u!1001 &4122773876441241818
 PrefabInstance:
   m_ObjectHideFlags: 0
