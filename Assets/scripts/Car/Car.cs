@@ -27,7 +27,7 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Accelerate(Input.GetAxisRaw("Vertical"));
+        Accelerate(Input.GetAxisRaw("Drive"));
         Steer(Input.GetAxisRaw("Horizontal"));
 
         if (Input.GetKey(KeyCode.Space))
@@ -55,7 +55,7 @@ public class Car : MonoBehaviour
                 (locVel.z < -0.01 && value > 0))
             {
                 Debug.Log("Braking");
-                Brake(1);
+                Brake(value);
                 foreach (Wheel wheel in wheels)
                 {
                     wheel.SetSpeed(0);
@@ -86,7 +86,7 @@ public class Car : MonoBehaviour
     {
         foreach (Wheel wheel in wheels)
         {
-            wheel.SetBrake(baseBrakingForce * value);
+            wheel.SetBrake(baseBrakingForce * Mathf.Abs(value));
         }
     }
 
