@@ -372,40 +372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4122773875460079198, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: hasPower
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773875620707631, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.9
-      objectReference: {fileID: 0}
     - target: {fileID: 4122773876993877196, guid: 3320d060908eefa4cb5f898b97bbde2a,
         type: 3}
       propertyPath: m_Name
       value: Truck
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877198, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: baseBrakingForce
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877198, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: baseSteeringAngle
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877198, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: baseAccelerationForce
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877199, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_Mass
-      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 4122773876993877201, guid: 3320d060908eefa4cb5f898b97bbde2a,
         type: 3}
@@ -460,16 +430,6 @@ PrefabInstance:
     - target: {fileID: 4122773876993877201, guid: 3320d060908eefa4cb5f898b97bbde2a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773877124927662, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773877210357267, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: hasPower
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
