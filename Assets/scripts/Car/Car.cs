@@ -22,8 +22,8 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Accelerate(Input.GetAxis("Vertical"));
-        Steer(Input.GetAxis("Horizontal"));
+        Accelerate(Input.GetAxisRaw("Vertical"));
+        Steer(Input.GetAxisRaw("Horizontal"));
 
         if (Input.GetKey(KeyCode.S))
         {
@@ -37,6 +37,7 @@ public class Car : MonoBehaviour
 
     public void Steer(float value)
     {
+        Debug.Log(value);
         foreach (Wheel wheel in wheels)
         {
             wheel.SetSteering(baseSteeringAngle * value);

@@ -3,20 +3,19 @@ using System.Collections;
 
 public class TempCameraFollow : MonoBehaviour
 {
-	public Transform target;
-	public float smoothing = 5f;
-	Vector3 offset;
+    public Transform target;
+    public float smoothSpeed = 0.125f;
+    public Vector3 locationOffset;
+    public Vector3 rotationOffset;
 
-	// Use this for initialization
-	void Start()
-	{
-		offset = transform.position - target.position;
-	}
+    void FixedUpdate()
+    {
+        Vector3 desiredPosition = target.position + target.rotation * locationOffset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothedPosition;
 
-	// Update is called once per frame
-	void LateUpdate()
-	{
-		Vector3 targetCamPos = target.position + offset;
-		transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
-	}
+        Quaternion desiredrotation = target.rotation * Quaternion.Euler(rotationOffset);
+        Quaternion smoothedrotation = Quaternion.Lerp(transform.rotation, desiredrotation, smoothSpeed);
+        transform.rotation = smoothedrotation;
+    }
 }
