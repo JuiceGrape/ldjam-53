@@ -9,6 +9,7 @@ public class Car : MonoBehaviour
     [SerializeField] private float baseAccelerationForce = 500f;
     [SerializeField] private float baseBrakingForce = 300f;
     [SerializeField] private float baseSteeringAngle = 25.0f;
+    [SerializeField] private float baseMaxSpeed = 20.0f;
     [SerializeField] private bool accelerateIsBrake = true;
 
     public Vector3 CurrentSpeed { get; private set; }
@@ -53,6 +54,7 @@ public class Car : MonoBehaviour
             if ((CurrentSpeed.z > 0.01 && value < 0) || 
                 (CurrentSpeed.z < -0.01 && value > 0))
             {
+                //Braking
                 Brake(value);
                 foreach (Wheel wheel in wheels)
                 {
@@ -62,10 +64,19 @@ public class Car : MonoBehaviour
             } 
             else
             {
+                //Driving
                 Brake(0);
                 foreach (Wheel wheel in wheels)
                 {
-                    wheel.SetSpeed(baseAccelerationForce * value);
+                    if (CurrentSpeed.magnitude >= baseMaxSpeed)
+                    {
+                        wheel.SetSpeed(0);
+                    }
+                    else
+                    {
+                        wheel.SetSpeed(baseAccelerationForce * value);
+                    }
+                    
                 }
             }
         }
@@ -73,7 +84,14 @@ public class Car : MonoBehaviour
         {
             foreach (Wheel wheel in wheels)
             {
-                wheel.SetSpeed(baseAccelerationForce * value);
+                if (CurrentSpeed.magnitude >= baseMaxSpeed)
+                {
+                    wheel.SetSpeed(0);
+                }
+                else
+                {
+                    wheel.SetSpeed(baseAccelerationForce * value);
+                }
             }
         }
     }

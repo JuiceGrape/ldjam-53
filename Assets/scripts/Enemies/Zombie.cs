@@ -14,7 +14,7 @@ public class Zombie : Desctructable
     }
     override protected void OnDeath(PlayerController player, Car truck)
     {
-        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Rigidbody>().AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
         GetComponent<Collider>().enabled = false;
     }
 
