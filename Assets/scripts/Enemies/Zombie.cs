@@ -31,7 +31,7 @@ public class Zombie : Desctructable
         chaseDistance = Random.Range(minChaseDistance, maxChaseDistance);
         agent.speed = Random.Range(minSpeed, maxSpeed);
 
-        GetComponent<Rigidbody>().AddForce(new Vector3(0, 6f, 0), ForceMode.Impulse);
+        //GetComponent<Rigidbody>().AddForce(new Vector3(0, 6f, 0), ForceMode.Impulse);
     }
     private void Update()
     {
@@ -109,7 +109,7 @@ public class Zombie : Desctructable
 
     override protected void OnDeath(PlayerController player, Car truck)
     {
-        GetComponent<Rigidbody>().AddForce(new Vector3(0, 8, 0), ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(new Vector3(0, 4, 0), ForceMode.Impulse);
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Rigidbody>().useGravity = true;
         GetComponent<Collider>().enabled = false;
