@@ -28,7 +28,7 @@ public class PizzaUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOpen && Input.GetButtonDown("exit"))
+        if (isOpen && Input.GetButtonDown("Cancel"))
         {
             Close();
         }

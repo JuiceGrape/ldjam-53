@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 703875989}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &93107791
@@ -4203,6 +4203,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7957533111384850843, guid: b8bea616317ef9b43a97ec25caf95093,
     type: 3}
   m_PrefabInstance: {fileID: 697782294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &703875989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5725000731426640850, guid: f089cf5732d28904ea29ddb760ff0714,
+    type: 3}
+  m_PrefabInstance: {fileID: 3077030715492057267}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &728190130
 PrefabInstance:
@@ -12260,11 +12266,6 @@ PrefabInstance:
       propertyPath: resource
       value: 
       objectReference: {fileID: 144983906}
-    - target: {fileID: 3077030715885974630, guid: f089cf5732d28904ea29ddb760ff0714,
-        type: 3}
-      propertyPath: resource
-      value: 
-      objectReference: {fileID: 144983906}
     - target: {fileID: 3077030716099185768, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
       propertyPath: resource
@@ -12385,6 +12386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4154456615678065594, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: resource
+      value: 
+      objectReference: {fileID: 313235140}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
 --- !u!1001 &4122773875475741569
