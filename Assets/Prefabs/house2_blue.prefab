@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3201414120427014811}
   - component: {fileID: 5580813880588819490}
   - component: {fileID: -7134658460969977873}
+  - component: {fileID: 8683925486854813017}
   m_Layer: 0
   m_Name: house2_blue
   m_TagString: Untagged
@@ -95,5 +96,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.1924644, y: 4.8519373, z: 5.893583}
-  m_Center: {x: -0.0093204975, y: 2.428763, z: -0.42597008}
+  m_Size: {x: 4.61603, y: 4.8519373, z: 5.4581146}
+  m_Center: {x: -0.01865983, y: 2.428763, z: -0.20823562}
+--- !u!208 &8683925486854813017
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877330651414033338}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5960002, y: 2.426, z: 2.947}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.009000001, y: 2.4290001, z: -0.42600003}
+  m_TimeToStationary: 0.5

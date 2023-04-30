@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4323029244142421588}
   - component: {fileID: 3806894627827098795}
   - component: {fileID: -3280675663488739560}
+  - component: {fileID: 7569752959154533752}
   m_Layer: 0
   m_Name: townhouse2_pink
   m_TagString: Untagged
@@ -96,5 +97,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4336143, y: 7.0570602, z: 3.38291}
-  m_Center: {x: -0.023356736, y: 3.5484223, z: 0.030850887}
+  m_Size: {x: 2.4503455, y: 7.0570602, z: 2.7558308}
+  m_Center: {x: -0.04163289, y: 3.5484223, z: -0.009567559}
+--- !u!208 &7569752959154533752
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619262918427372228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.7170001, y: 3.5290003, z: 1.6910001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.023000002, y: 3.548, z: 0.031000001}
+  m_TimeToStationary: 0.5

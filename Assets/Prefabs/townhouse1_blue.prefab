@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4323029244142421588}
   - component: {fileID: 3806894627827098795}
   - component: {fileID: 3143010659272035783}
+  - component: {fileID: 2503527166794990035}
   m_Layer: 0
   m_Name: townhouse1_blue
   m_TagString: Untagged
@@ -95,5 +96,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.2792282, y: 6.0249567, z: 3.2222254}
-  m_Center: {x: 0.053836286, y: 3.03237, z: 0.025290847}
+  m_Size: {x: 2.1698565, y: 6.0249567, z: 2.5112948}
+  m_Center: {x: 0.0034854412, y: 3.03237, z: -0.039253175}
+--- !u!208 &2503527166794990035
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619262918427372228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.6400001, y: 3.012, z: 1.6110001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.054, y: 3.032, z: 0.025}
+  m_TimeToStationary: 0.5

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2523611453066318868}
   - component: {fileID: 7773500714296223749}
   - component: {fileID: 5932968513153438282}
+  - component: {fileID: -5886861444531836456}
   m_Layer: 0
   m_Name: house3_green
   m_TagString: Untagged
@@ -95,5 +96,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.4146557, y: 5.184206, z: 4.710328}
-  m_Center: {x: 0.1120342, y: 2.5948973, z: 0.50364196}
+  m_Size: {x: 4.548773, y: 5.184206, z: 3.9079545}
+  m_Center: {x: 0.121673584, y: 2.5948973, z: 0.5623268}
+--- !u!208 &-5886861444531836456
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530711593694391023}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.707, y: 2.592, z: 2.355}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.112, y: 2.595, z: 0.504}
+  m_TimeToStationary: 0.5

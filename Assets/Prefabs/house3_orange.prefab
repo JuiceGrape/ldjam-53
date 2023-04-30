@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2523611453066318868}
   - component: {fileID: 7773500714296223749}
   - component: {fileID: -2753650340064017757}
+  - component: {fileID: 6313791761255561612}
   m_Layer: 0
   m_Name: house3_orange
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530711593694391023}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -95,5 +96,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.4146557, y: 5.184206, z: 4.710328}
-  m_Center: {x: 0.1120342, y: 2.5948973, z: 0.50364196}
+  m_Size: {x: 4.6076837, y: 5.184206, z: 3.8722825}
+  m_Center: {x: 0.106631994, y: 2.5948973, z: 0.51717305}
+--- !u!208 &6313791761255561612
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530711593694391023}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.707, y: 2.592, z: 2.355}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.112, y: 2.595, z: 0.504}
+  m_TimeToStationary: 0.5
