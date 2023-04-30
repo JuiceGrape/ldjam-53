@@ -12262,6 +12262,36 @@ PrefabInstance:
       propertyPath: resource
       value: 
       objectReference: {fileID: 144983906}
+    - target: {fileID: 176711595429935241, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 176711595429935241, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 176711595429935241, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798803721079267881, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798803721079267881, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798803721079267881, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3077030716099185768, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
       propertyPath: AddsName
@@ -12386,6 +12416,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944850430576022808, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944850430576022808, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
