@@ -58,6 +58,7 @@ public class PizzaUI : MonoBehaviour
 
     public void RepairCar()
     {
+        GameStats.RegisterRepair();
         PlayerController.instance.cash.DecreaseValue(10.0f);
         PlayerController.instance.health.Reset();
     }

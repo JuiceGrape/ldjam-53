@@ -12,9 +12,13 @@ public class Car : MonoBehaviour
     [SerializeField] private float baseMaxSpeed = 20.0f;
     [SerializeField] private bool accelerateIsBrake = true;
 
+    public static bool Broken = false;
+
     public Vector3 CurrentSpeed { get; private set; }
 
     new Rigidbody rigidbody;
+
+    Vector3 prevPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +26,18 @@ public class Car : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
 
         rigidbody.centerOfMass = new Vector3(0, -0.1f, 0);
+        prevPos = transform.position;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (Broken)
+        {
+            Brake(1f);
+            return;
+        }
+
         CurrentSpeed = transform.InverseTransformDirection(rigidbody.velocity);
         Accelerate(Input.GetAxisRaw("Drive"));
         Steer(Input.GetAxisRaw("Horizontal"));
@@ -35,6 +46,8 @@ public class Car : MonoBehaviour
         {
             Brake(1);
         }
+
+        GameStats.RegisterDistance((transform.position - prevPos).magnitude / 1000.0f);
     }
 
     public void Steer(float value)

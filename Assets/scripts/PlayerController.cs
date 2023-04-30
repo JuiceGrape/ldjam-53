@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Resource cash;
 
     [SerializeField] private ParticleSystem damageEffect;
+    [SerializeField] private GameOverScreen gameoverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -43,11 +44,29 @@ public class PlayerController : MonoBehaviour
         float calculatedDamage = damage;
         if (zombieDamage)
             calculatedDamage = Upgrades.instance.spikes.CalculateValue(calculatedDamage);
+        else
+            GameStats.RegisterCrash();
 
         if (calculatedDamage > 0.01f)
         {
             damageEffect.Play();
         }
         health.DecreaseValue(calculatedDamage);
+
+        if (health.GetValue() <= health.minValue)
+        {
+            StartCoroutine(Die());
+        }
+    }
+
+    private IEnumerator Die()
+    {
+        Car.Broken = true;
+        for(float scale = 1.0f; scale >= 0.01f; scale-=0.01f)
+        {
+            Time.timeScale = scale;
+            yield return new WaitForSecondsRealtime(0.05f);
+        }
+        gameoverScreen.gameObject.SetActive(true);
     }
 }

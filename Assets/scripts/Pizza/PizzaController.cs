@@ -92,7 +92,9 @@ public class PizzaController : MonoBehaviour
     {
         OnPizzaEnded.Invoke(activeRequest);
         activeRequest.Deactivate();
-        PlayerController.instance.cash.IncreaseValue(CalculatePayout(accuracy));
+        float payout = CalculatePayout(accuracy);
+        PlayerController.instance.cash.IncreaseValue(payout);
+        GameStats.RegisterCash(payout);
         PizzaTimer.Reset();
     }
 

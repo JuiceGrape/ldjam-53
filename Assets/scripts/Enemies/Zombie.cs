@@ -130,6 +130,8 @@ public class Zombie : Desctructable
             hurtFX.SetActive(true);
         }
 
+        GameStats.RegisterKill();
+
         agent.enabled = false;
         GetComponent<Collider>().isTrigger = true;
         dead = true;
