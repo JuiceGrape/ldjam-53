@@ -25,7 +25,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
-    motionNodeName: 
+    motionNodeName: <Root Transform>
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -43,11 +43,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: SimpleBipedRig|00.zombies
-      takeName: SimpleBipedRig|00.zombies
+      name: SimpleBipedRig|zombie_appear (1)
+      takeName: SimpleBipedRig|zombie_appear
       internalID: 4169368224135728958
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 25
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

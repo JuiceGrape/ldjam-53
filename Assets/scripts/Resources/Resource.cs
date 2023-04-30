@@ -21,14 +21,6 @@ public class Resource : MonoBehaviour
         Reset();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            IncreaseValue(0.1f);
-        }
-    }
-
     public float Reset()
     {
         return SetValue(startValue);
