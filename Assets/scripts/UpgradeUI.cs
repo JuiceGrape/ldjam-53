@@ -30,14 +30,14 @@ public class UpgradeUI : MonoBehaviour
         Upgrade upr = Upgrades.GetUpgrade(upgrade);
 
         upgradeName.text = upr.name;
-        upgradeLevel.text = "Level " + upr.currentLevel + "/" + upr.maxLevel;
+        upgradeLevel.text = upr.currentLevel + "/" + upr.maxLevel;
         setButtonState(upr);
     }
 
     void setButtonState(Upgrade upr)
     {
         if (upr.currentLevel != upr.maxLevel)
-            upgradeCost.SetText(upr.GetCurrentCost().ToString("f2") + " " + PlayerController.instance.cash.name);
+            upgradeCost.SetText(upr.GetCurrentCost().ToString("f2"));
         else
             upgradeCost.SetText("Max level");
 

@@ -36,7 +36,7 @@ public class PizzaUI : MonoBehaviour
 
     public void UpdateUI()
     {
-        TruckRepairButton.GetComponentInChildren<TMP_Text>().text = repairCost.ToString("f2") + " " + PlayerController.instance.cash.name;
+        TruckRepairButton.GetComponentInChildren<TMP_Text>().text = repairCost.ToString("f2");
         if (PlayerController.instance.cash.GetValue() >= repairCost)
         {
             TruckRepairButton.interactable = true;
