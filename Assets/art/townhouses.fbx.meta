@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ade6d97dddb3c2e4198f30b1050dfb5f
+guid: 9d936b351de41104f8913609acf54924
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: OLDCITY
-    second: {fileID: 2100000, guid: 69d2a21cc0f03724e92fa91f116c478a, type: 2}
+      name: city
+    second: {fileID: 2100000, guid: f56b411be20971443b8f5485df1979a4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: city
-    second: {fileID: 2100000, guid: f56b411be20971443b8f5485df1979a4, type: 2}
+      name: city2
+    second: {fileID: 2100000, guid: fe64382c3258424449ef1ce1df31f17d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

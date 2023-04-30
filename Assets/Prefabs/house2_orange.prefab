@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5214021297453732146}
   - component: {fileID: 3201414120427014811}
   - component: {fileID: 5580813880588819490}
+  - component: {fileID: 2099214545833974154}
   m_Layer: 0
   m_Name: house2_orange
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2099214545833974154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877330651414033338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.1924644, y: 4.8519373, z: 5.893583}
+  m_Center: {x: -0.0093204975, y: 2.428763, z: -0.42597008}
