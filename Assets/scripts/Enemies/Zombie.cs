@@ -175,7 +175,7 @@ public class Zombie : Desctructable
         float count = 0.0f;
         while(count < 1.0f)
         {
-            count += flySpeed * Time.deltaTime;
+            count += 1.0f * Time.deltaTime;
 
             Vector3 m1 = Vector3.Lerp(startPoint, arcPoint, count);
             Vector3 m2 = Vector3.Lerp(arcPoint, endPoint, count);
