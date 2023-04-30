@@ -9,7 +9,7 @@ public class Desctructable : MonoBehaviour
     [SerializeField] private float minimumSpeed = 8.0f;
 
     //Override to implement own death behaviour
-    virtual protected void OnDeath(PlayerController player, Car truck)
+    virtual protected void OnDeath(PlayerController player, Car truck, Collision collision)
     {
         GetComponent<Collider>().enabled = false;
     }
@@ -28,7 +28,7 @@ public class Desctructable : MonoBehaviour
         if (player != null && truck != null)
         {
             player.TakeDamage(damageToVehicle);
-            OnDeath(player, truck);
+            OnDeath(player, truck, collision);
 
             //TODO: Polish: Figure this the fuck out lmao
             //if (collision.relativeVelocity.magnitude >= minimumSpeed)

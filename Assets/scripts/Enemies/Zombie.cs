@@ -58,7 +58,6 @@ public class Zombie : Desctructable
             ready = true;
             agent.enabled = true;
             GetComponent<Collider>().enabled = true;
-            GetComponent<Rigidbody>().useGravity = false;
             startPos = transform.position;
             prevPos = transform.position;
         }
@@ -89,7 +88,7 @@ public class Zombie : Desctructable
     {
         if (wanderRoutine == null)
         {
-            wanderRoutine = StartCoroutine(Wander(50.0f, minWaitTime, maxWaitTime));
+           wanderRoutine = StartCoroutine(Wander(50.0f, minWaitTime, maxWaitTime));
         }
         
         if (Vector3.Distance(transform.position, PlayerController.instance.transform.position) <= chaseDistance)
@@ -124,17 +123,19 @@ public class Zombie : Desctructable
         return navHit.position;
     }
 
-    override protected void OnDeath(PlayerController player, Car truck)
+    override protected void OnDeath(PlayerController player, Car truck, Collision collision)
     {
         if (hurtFX != null)
         {
             hurtFX.SetActive(true);
         }
-        GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0), ForceMode.Impulse);
-        GetComponent<NavMeshAgent>().enabled = false;
-        GetComponent<Rigidbody>().useGravity = true;
-        GetComponent<Collider>().enabled = false;
+
+        agent.enabled = false;
+        GetComponent<Collider>().isTrigger = true;
         dead = true;
+
+        Vector3 direction = transform.position - truck.transform.position;
+        StartCoroutine(BlowAway(-direction.normalized, truck.CurrentSpeed.magnitude / 20));
     }
 
     //Override to implement own soft hit behaviour
@@ -150,10 +151,10 @@ public class Zombie : Desctructable
             float waitTime = Random.Range(minWaitTime, maxWaitTime);
             yield return new WaitForSeconds(waitTime);
 
-            agent.SetDestination(RandomNavSphere(transform.position, range, -1));
-            while(agent.pathStatus != NavMeshPathStatus.PathComplete && agent.remainingDistance >= 0.5f)
+            agent?.SetDestination(RandomNavSphere(transform.position, range, -1));
+            while(agent?.pathStatus != NavMeshPathStatus.PathComplete && agent.remainingDistance >= 0.5f)
             {
-                if (agent.pathStatus == NavMeshPathStatus.PathInvalid)
+                if (agent?.pathStatus == NavMeshPathStatus.PathInvalid)
                 {
                     Debug.LogWarning("Zombie found invalid path");
                     break;
@@ -162,5 +163,30 @@ public class Zombie : Desctructable
             }
         }
         
+    }
+
+    IEnumerator BlowAway(Vector3 direction, float flySpeed)
+    {
+        Vector3 startPoint = transform.position;
+        Vector3 endPoint = transform.position - (direction * 20 * flySpeed) - (transform.up * 2.0f);
+        Vector3 arcPoint = startPoint + (endPoint - startPoint) / 2 + Vector3.up * 5.0f;
+
+
+        float count = 0.0f;
+        while(count < 1.0f)
+        {
+            count += flySpeed * Time.deltaTime;
+
+            Vector3 m1 = Vector3.Lerp(startPoint, arcPoint, count);
+            Vector3 m2 = Vector3.Lerp(arcPoint, endPoint, count);
+            transform.position = Vector3.Lerp(m1, m2, count);
+            yield return new WaitForEndOfFrame();
+        }
+
+        while(true)
+        {
+            transform.position = transform.position + (Vector3.down * 5.0f * Time.deltaTime);
+            yield return new WaitForEndOfFrame();
+        }
     }
 }
