@@ -27,7 +27,7 @@ public class Upgrades : MonoBehaviour
     public Upgrade turning = new Upgrade("TurningSpeed", 10, 10.0f, 2.0f, 0.25f);
     //public Upgrade plating = new Upgrade("Armour plating", 10, 10.0f, 2.0f);
 
-    public Upgrade spikes = new Upgrade("Bumper Spikes", 1, 100.0f, 1.0f, -0.5f);
+    public Upgrade spikes = new Upgrade("Bumper Spikes", 1, 100.0f, 1.0f, -1.0f);
 
     public Upgrade tips = new Upgrade("Tip amount", 10, 10.0f, 2.0f, 1.0f);
     public Upgrade wages = new Upgrade("Get a raise", 10, 10.0f, 2.0f, 0.5f);

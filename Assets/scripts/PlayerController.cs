@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Resource health;
     [SerializeField] public Resource cash;
 
+    [SerializeField] private ParticleSystem damageEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +35,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, bool zombieDamage)
     {
         //TODO: Car breaking down when dead
         //TODO: Zombies swarm car when broken down
 
-        health.DecreaseValue(Upgrades.instance.spikes.CalculateValue(damage));
+        float calculatedDamage = damage;
+        if (zombieDamage)
+            calculatedDamage = Upgrades.instance.spikes.CalculateValue(calculatedDamage);
+
+        if (calculatedDamage > 0.01f)
+        {
+            damageEffect.Play();
+        }
+        health.DecreaseValue(calculatedDamage);
     }
 }

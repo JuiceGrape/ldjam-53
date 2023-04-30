@@ -27,8 +27,7 @@ public class Desctructable : MonoBehaviour
         
         if (player != null && truck != null)
         {
-            if (Upgrades.instance.spikes.currentLevel != Upgrades.instance.spikes.maxLevel)
-                player.TakeDamage(damageToVehicle);
+            player.TakeDamage(damageToVehicle, true);
 
             OnDeath(player, truck, collision);
 
