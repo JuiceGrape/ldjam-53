@@ -39,15 +39,17 @@ public class Car : MonoBehaviour
 
     public void Steer(float value)
     {
+        float steerAngle = Upgrades.instance.turning.CalculateValue(baseSteeringAngle);
         foreach (Wheel wheel in wheels)
         {
-            wheel.SetSteering(baseSteeringAngle * value);
+            wheel.SetSteering(steerAngle * value);
         }
     }
 
     public void Accelerate(float value)
     {
-        
+        float maxSpeed = Upgrades.instance.speed.CalculateValue(baseMaxSpeed);
+        float accellerationForce = Upgrades.instance.accell.CalculateValue(baseAccelerationForce);
         if (accelerateIsBrake)
         {
             if ((CurrentSpeed.z > 0.01 && value < 0) || 
@@ -67,13 +69,13 @@ public class Car : MonoBehaviour
                 Brake(0);
                 foreach (Wheel wheel in wheels)
                 {
-                    if (CurrentSpeed.magnitude >= baseMaxSpeed)
+                    if (CurrentSpeed.magnitude >= maxSpeed)
                     {
                         wheel.SetSpeed(0);
                     }
                     else
                     {
-                        wheel.SetSpeed(baseAccelerationForce * value);
+                        wheel.SetSpeed(accellerationForce * value);
                     }
                     
                 }
@@ -83,13 +85,13 @@ public class Car : MonoBehaviour
         {
             foreach (Wheel wheel in wheels)
             {
-                if (CurrentSpeed.magnitude >= baseMaxSpeed)
+                if (CurrentSpeed.magnitude >= maxSpeed)
                 {
                     wheel.SetSpeed(0);
                 }
                 else
                 {
-                    wheel.SetSpeed(baseAccelerationForce * value);
+                    wheel.SetSpeed(accellerationForce * value);
                 }
             }
         }
@@ -97,9 +99,10 @@ public class Car : MonoBehaviour
 
     public void Brake(float value)
     {
+        float brakingForce = Upgrades.instance.brake.CalculateValue(baseBrakingForce);
         foreach (Wheel wheel in wheels)
         {
-            wheel.SetBrake(baseBrakingForce * Mathf.Abs(value));
+            wheel.SetBrake(brakingForce * Mathf.Abs(value));
         }
     }
 

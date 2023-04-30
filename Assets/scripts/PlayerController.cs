@@ -26,10 +26,9 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        //TODO: Mods
-        //TODO: Effect on hit
         //TODO: Car breaking down when dead
         //TODO: Zombies swarm car when broken down
-        health.DecreaseValue(damage);
+
+        health.DecreaseValue(Upgrades.instance.spikes.CalculateValue(damage));
     }
 }

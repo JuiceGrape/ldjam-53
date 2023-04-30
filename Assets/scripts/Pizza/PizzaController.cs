@@ -52,9 +52,9 @@ public class PizzaController : MonoBehaviour
         {
             if (PizzaTimer.GetValue() == PizzaTimer.minValue)
             {
-                OnPizzaFailed.Invoke(activeRequest);
-                OnPizzaEnded.Invoke(activeRequest);
-                activeRequest.Deactivate();
+                //OnPizzaFailed.Invoke(activeRequest);
+                //OnPizzaEnded.Invoke(activeRequest);
+                //activeRequest.Deactivate();
             }
             else
             {
@@ -66,8 +66,8 @@ public class PizzaController : MonoBehaviour
     private float CalculatePayout(float accuracy)
     {
         //TODO: Mods
-        float payoutWithMods = BasePayout;
-        float tipWithMods = BaseTip;
+        float payoutWithMods = Upgrades.instance.wages.CalculateValue(BasePayout);
+        float tipWithMods = Upgrades.instance.tips.CalculateValue(BaseTip);
 
         payoutWithMods *= accuracy;
         tipWithMods *= PizzaTimer.GetValue() / PizzaTimer.maxValue;
