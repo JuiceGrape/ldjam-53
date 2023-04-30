@@ -3950,6 +3950,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 629399739}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &636875279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8629993442319235454, guid: f089cf5732d28904ea29ddb760ff0714,
+    type: 3}
+  m_PrefabInstance: {fileID: 3077030715492057267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &636875283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636875279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7dcf7493950bb441aaa0f4dc3a0ee83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resource: {fileID: 144983906}
+  minfill: 0.9
 --- !u!1001 &653320281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12430,6 +12450,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830928743786746600, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 335.4185
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830928743786746600, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70.5443
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830928743786746600, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5868
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830928743786746600, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.2716
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985175395239331203, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0.883
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
