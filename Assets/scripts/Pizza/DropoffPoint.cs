@@ -25,7 +25,7 @@ public class DropoffPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (PizzaController.instance.HasActiveRequest())
+        if (other.GetComponentInChildren<PlayerController>() != null && PizzaController.instance.HasActiveRequest())
         {
             PizzaController.instance.CompleteRequest(1.0f);
         }
