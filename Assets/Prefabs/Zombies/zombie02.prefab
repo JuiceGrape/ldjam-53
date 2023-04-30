@@ -3075,7 +3075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdcb8e4be4e9b44bb19c351f3b7b87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToVehicle: 5
+  damageToVehicle: 2
   minimumSpeed: 8
   minChaseDistance: 5
   maxChaseDistance: 20
