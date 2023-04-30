@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c5c6d8519f45804fae2183ea17177e7
+guid: dd4b752f7e232834cba7d0e35bfe8201
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -9,21 +9,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: city
     second: {fileID: 2100000, guid: f56b411be20971443b8f5485df1979a4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cliff
-    second: {fileID: 2100000, guid: a543e86f718858a4eb32fec24c0f9430, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: extras
-    second: {fileID: 2100000, guid: b1c7098dacfe25146813277add8d9382, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: grass
-    second: {fileID: 2100000, guid: 96dba3a73d8867749a5c33b05f02bca5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
