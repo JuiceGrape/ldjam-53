@@ -28,7 +28,6 @@ public class Car : MonoBehaviour
     void FixedUpdate()
     {
         CurrentSpeed = transform.InverseTransformDirection(rigidbody.velocity);
-        Debug.Log(CurrentSpeed);
         Accelerate(Input.GetAxisRaw("Drive"));
         Steer(Input.GetAxisRaw("Horizontal"));
 
