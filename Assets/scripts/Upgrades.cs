@@ -2,6 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum UpgradeType
+{
+    Speed,
+    Acell,
+    Brake,
+    Turning,
+    Spikes,
+    Tips,
+    Wages
+}
+
 public class Upgrades : MonoBehaviour
 {
     public static Upgrades instance
@@ -22,6 +33,8 @@ public class Upgrades : MonoBehaviour
     public Upgrade wages = new Upgrade("Get a raise", 10, 10.0f, 2.0f, 0.5f);
     //public Upgrade patience = new Upgrade("Customer patience", 10, 10.0f, 2.0f);
 
+    private Dictionary<UpgradeType, Upgrade> upgradeDict;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,10 +45,27 @@ public class Upgrades : MonoBehaviour
         }
 
         instance = this;
+
+        upgradeDict = new Dictionary<UpgradeType, Upgrade>()
+        {
+            { UpgradeType.Speed, speed },
+            { UpgradeType.Acell, accell },
+            { UpgradeType.Brake, brake },
+            { UpgradeType.Turning, turning },
+            { UpgradeType.Spikes, spikes },
+            { UpgradeType.Tips, tips },
+            { UpgradeType.Wages, wages },
+        };
     }
 
-    void Upgrade(Upgrade upgrade)
+    public static Upgrade GetUpgrade(UpgradeType type)
     {
+        return instance.upgradeDict[type];
+    }
+
+    public static void Upgrade(UpgradeType upgradeType)
+    {
+        Upgrade upgrade = GetUpgrade(upgradeType);
         PlayerController.instance.cash.DecreaseValue(upgrade.GetCurrentCost());
         upgrade.UpgradeOnce();
     }

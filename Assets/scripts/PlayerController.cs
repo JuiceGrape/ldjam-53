@@ -24,6 +24,15 @@ public class PlayerController : MonoBehaviour
         instance = this;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            cash.IncreaseValue(5.0f);
+            health.DecreaseValue(5.0f);
+        }
+    }
+
     public void TakeDamage(float damage)
     {
         //TODO: Car breaking down when dead

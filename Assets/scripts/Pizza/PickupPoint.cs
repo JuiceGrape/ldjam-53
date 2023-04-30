@@ -8,6 +8,7 @@ public class PickupPoint : MonoBehaviour
 {
     public UnityEvent<PizzaRequest> OnPizzaRequestObtained;
     new private Collider collider;
+    [SerializeField] private PizzaUI uiController;
 
     private void Start()
     {
@@ -16,11 +17,9 @@ public class PickupPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!PizzaController.instance.HasActiveRequest())
+        if(other.GetComponentInChildren<PlayerController>() != null)
         {
-            var request = PizzaController.instance.generateRequest();
-            PizzaController.instance.StartPizzaQuest(request);
-            OnPizzaRequestObtained.Invoke(request);
+            uiController.Open();
         }
     }
 }
