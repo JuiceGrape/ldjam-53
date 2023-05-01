@@ -15,6 +15,8 @@ public class DropoffPoint : MonoBehaviour
 {
     public PartOfTown townLocation;
     public string identifier;
+    public Sprite face;
+    public string personName;
 
 
     public void Score(Vector3 hitPoint)

@@ -6,12 +6,16 @@ public class PizzaRequest {
 
     private string[] PizzaTypes = new string[]
     {
-        "Pizza Margharita",
-        "Pizza Funghi",
+        "Pizza Margherita",
+        "Pizza Fungi",
         "Pizza Salame",
-        "Pizza Chunky funky munky",
+        "Chunky Funky Munky",
         "Raw Pizza",
-        "Tripledecker Funtime"
+        "Tripledecker Funtime",
+        "Pizza Hawaii",
+        "Pizza Boerlusconi",
+        "Pizza Doner",
+        "Pizza Spinaci"
     };
 
     public DropoffPoint cachedTarget;
@@ -37,15 +41,23 @@ public class PizzaRequest {
         isActive = false;
     }
 
+    public Sprite GetFace()
+    {
+        return cachedTarget.face;
+    }
+
+    public string GetCustomerName()
+    {
+        return cachedTarget.personName;
+    }
+
     private string GenerateDetails()
     {
         string retval = "";
 
-        retval += "1 " + PizzaTypes[Random.Range(0, PizzaTypes.Length)] + "\n";
+        retval += PizzaTypes[Random.Range(0, PizzaTypes.Length)] + "\n";
         retval += "Location: " + cachedTarget.townLocation.ToString() + "\n";
-        retval += "Identifier: " + cachedTarget.identifier + "\n";
-        retval += "Delivery instructions: Throw at front door";
-        //retval += "Delivery instructions: Throw pizza at front door";
+        retval += "Identifier: " + cachedTarget.identifier;
 
         return retval;
     }
@@ -60,11 +72,11 @@ public class PizzaRequest {
         switch(cachedTarget.townLocation)
         {
             case PartOfTown.Downtown:
-                return 0.75f;
-            case PartOfTown.Hillside:
-                return 3f;
-            case PartOfTown.Riverside:
                 return 1f;
+            case PartOfTown.Hillside:
+                return 2.5f;
+            case PartOfTown.Riverside:
+                return 1.25f;
             case PartOfTown.Suburbs:
                 return 1.5f;
             default:

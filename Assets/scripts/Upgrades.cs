@@ -21,10 +21,10 @@ public class Upgrades : MonoBehaviour
         private set;
     }
 
-    public Upgrade speed = new Upgrade("Max Speed", 10, 25f, 1.0f, 0.2f);
-    public Upgrade accell = new Upgrade("Acelleration", 10, 25f, 1.0f, 0.5f);
-    public Upgrade brake = new Upgrade("Braking Force", 10, 25f, 1.0f, 1.0f);
-    public Upgrade turning = new Upgrade("TurningSpeed", 10, 25f, 1.0f, 0.1f);
+    public Upgrade speed = new Upgrade("Max Speed", 5, 20f, 1.0f, 0.2f);
+    public Upgrade accell = new Upgrade("Acelleration", 5, 20f, 1.0f, 0.5f);
+    public Upgrade brake = new Upgrade("Braking Force", 5, 20f, 1.0f, 1.0f);
+    public Upgrade turning = new Upgrade("TurningSpeed", 5, 20f, 1.0f, 0.1f);
     //public Upgrade plating = new Upgrade("Armour plating", 10, 10.0f, 2.0f);
 
     public Upgrade spikes = new Upgrade("Bumper Spikes", 2, 100.0f, 4.0f, -0.5f);
