@@ -328,6 +328,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
+        type: 3}
+      propertyPath: identifier
+      value: Blue roof next to suburbs
+      objectReference: {fileID: 0}
+    - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
+        type: 3}
+      propertyPath: townLocation
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
       propertyPath: m_Name
@@ -1038,6 +1048,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: identifier
+      value: Lonesome green roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1530711593694391023, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
       propertyPath: m_Name
@@ -2679,6 +2699,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
+        type: 3}
+      propertyPath: identifier
+      value: Blue roof next to pink roof
+      objectReference: {fileID: 0}
     - target: {fileID: 5214021297453732146, guid: 5ee9d55c37299b44e9f803c773a0c107,
         type: 3}
       propertyPath: m_RootOrder
@@ -3017,6 +3042,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
+      propertyPath: identifier
+      value: Tall building next to downtown
+      objectReference: {fileID: 0}
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
+      propertyPath: townLocation
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: b2363f5dde79511419a4383db02b04b1,
         type: 3}
       propertyPath: m_Name
@@ -3166,6 +3201,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: identifier
+      value: Tall brtown building next to large broken car
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d02060820763bb144988fa4cc173bfed, type: 3}
@@ -3757,6 +3802,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: townhouse2_pink (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: identifier
+      value: Small and pink roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3287904528334956920, guid: b22605e56bda4804499783d82591560c,
         type: 3}
       propertyPath: m_RootOrder
@@ -3901,6 +3956,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: identifier
+      value: Large brown building next to large broken car
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d02060820763bb144988fa4cc173bfed, type: 3}
@@ -4082,6 +4147,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -6775446617803171319, guid: b4a92702f5d9d4644a34d1b288fc9953,
+        type: 3}
+      propertyPath: identifier
+      value: Pink lonesome building
+      objectReference: {fileID: 0}
+    - target: {fileID: -6775446617803171319, guid: b4a92702f5d9d4644a34d1b288fc9953,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: b4a92702f5d9d4644a34d1b288fc9953,
         type: 3}
       propertyPath: m_Name
@@ -4858,6 +4933,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: townhouse2_pink
       objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: identifier
+      value: Small pink and green building surrounded by other buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3287904528334956920, guid: b22605e56bda4804499783d82591560c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5018,6 +5103,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: identifier
+      value: Green roof, next to downtown
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: townLocation
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1530711593694391023, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
       propertyPath: m_Name
@@ -5183,6 +5278,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
+      propertyPath: identifier
+      value: Small blue and brown building with flat roof
+      objectReference: {fileID: 0}
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: 8049ff70fa1df77448f314a26c910146,
         type: 3}
       propertyPath: m_Name
@@ -5687,41 +5792,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 8.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.007564313
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9999714
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736126800354182867, guid: 85a6510b195b5c74188400eb91e9db98,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 179.133
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a6510b195b5c74188400eb91e9db98, type: 3}
@@ -6467,6 +6537,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: identifier
+      value: Tall blue building, middle of hill
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: townLocation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55f4bf49d28904c489de38ddd8521333, type: 3}
 --- !u!4 &1135383200 stripped
@@ -6569,6 +6649,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
+        type: 3}
+      propertyPath: identifier
+      value: Blue roof next to large rock
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
       propertyPath: m_Name
@@ -6968,6 +7053,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: identifier
+      value: Tall brown building next to 2 broken tall buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d02060820763bb144988fa4cc173bfed, type: 3}
 --- !u!1001 &1309055855
@@ -7031,6 +7126,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591571685151040825, guid: f545706a862c19f4e804814031d9f64e,
+        type: 3}
+      propertyPath: identifier
+      value: Orange roof, next to downtown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591571685151040825, guid: f545706a862c19f4e804814031d9f64e,
+        type: 3}
+      propertyPath: townLocation
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8877330651414033338, guid: f545706a862c19f4e804814031d9f64e,
         type: 3}
@@ -7573,6 +7678,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
+      propertyPath: identifier
+      value: Tall blue and brown building with flat roof
+      objectReference: {fileID: 0}
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: 8049ff70fa1df77448f314a26c910146,
         type: 3}
       propertyPath: m_Name
@@ -7657,6 +7772,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -8816835282869701862, guid: 89a4124f38175f348927e358d1a71d68,
+        type: 3}
+      propertyPath: identifier
+      value: On top of the hill
+      objectReference: {fileID: 0}
+    - target: {fileID: -8816835282869701862, guid: 89a4124f38175f348927e358d1a71d68,
+        type: 3}
+      propertyPath: townLocation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1530711593694391023, guid: 89a4124f38175f348927e358d1a71d68,
         type: 3}
       propertyPath: m_Name
@@ -7806,6 +7931,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: identifier
+      value: Green building flanked by 2 blue buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b878ee5d527cf4946be20f0a15628cce, type: 3}
@@ -8049,6 +8184,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
+        type: 3}
+      propertyPath: identifier
+      value: Blue roof near the ramp
+      objectReference: {fileID: 0}
     - target: {fileID: 5214021297453732146, guid: 5ee9d55c37299b44e9f803c773a0c107,
         type: 3}
       propertyPath: m_RootOrder
@@ -9179,6 +9319,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: identifier
+      value: Green and brown building in center of downtown area
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b878ee5d527cf4946be20f0a15628cce, type: 3}
 --- !u!4 &1636263516 stripped
@@ -9337,6 +9487,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: identifier
+      value: Blue roof blue building, pointed roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55f4bf49d28904c489de38ddd8521333, type: 3}
@@ -10384,6 +10544,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
+      propertyPath: identifier
+      value: Tall building next to 3 abandoned buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: b2363f5dde79511419a4383db02b04b1,
         type: 3}
       propertyPath: m_Name
@@ -10748,6 +10918,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8802227792334042920, guid: 2cc11b297303206439e9f9ac8d332d67,
+        type: 3}
+      propertyPath: identifier
+      value: Pink roof next to blue roof
+      objectReference: {fileID: 0}
     - target: {fileID: 8877330651414033338, guid: 2cc11b297303206439e9f9ac8d332d67,
         type: 3}
       propertyPath: m_Name
@@ -10768,6 +10943,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: identifier
+      value: Green roof on the edge of the downtown area
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1530711593694391023, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
       propertyPath: m_Name
@@ -10912,6 +11097,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: identifier
+      value: Green and brown building next to many broken buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b878ee5d527cf4946be20f0a15628cce, type: 3}
 --- !u!4 &1990923443 stripped
@@ -11008,6 +11203,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: identifier
+      value: Large blue roof next to small pink building
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55f4bf49d28904c489de38ddd8521333, type: 3}
 --- !u!1001 &2021190833
@@ -11092,6 +11297,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2120730503}
     m_Modifications:
+    - target: {fileID: -6533872967993443961, guid: 929a67c115f217f44b373c1c391e0d56,
+        type: 3}
+      propertyPath: identifier
+      value: Green roof near the ramp
+      objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: 929a67c115f217f44b373c1c391e0d56,
         type: 3}
       propertyPath: m_Name
@@ -12426,10 +12636,6 @@ PrefabInstance:
       propertyPath: gameoverScreen
       value: 
       objectReference: {fileID: 758885453}
-    - target: {fileID: 2076382587, guid: 3320d060908eefa4cb5f898b97bbde2a, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1879ce84ee1a1cc4ba2b8fd32d404f65, type: 3}
     - target: {fileID: 4122773876993877196, guid: 3320d060908eefa4cb5f898b97bbde2a,
         type: 3}
       propertyPath: m_Name
