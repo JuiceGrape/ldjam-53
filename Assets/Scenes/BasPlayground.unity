@@ -12709,31 +12709,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Truck
       objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877200, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.27136642
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877200, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1.545315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877200, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_Center.x
-      value: -6.678198e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877200, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.18725798
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122773876993877200, guid: 3320d060908eefa4cb5f898b97bbde2a,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.2479223
-      objectReference: {fileID: 0}
     - target: {fileID: 4122773876993877201, guid: 3320d060908eefa4cb5f898b97bbde2a,
         type: 3}
       propertyPath: m_RootOrder
