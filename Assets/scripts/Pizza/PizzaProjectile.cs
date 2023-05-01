@@ -33,6 +33,8 @@ public class PizzaProjectile : MonoBehaviour
     {
         if (!thrown)
             return;
+
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, 500f * Time.deltaTime, 0));
         
         Vector3 nextPos = GetPointAlongLine(startPos, endPos, arcPos, positionAlongLine);
 
@@ -41,7 +43,7 @@ public class PizzaProjectile : MonoBehaviour
 
         positionAlongLine += speed * Time.deltaTime;
 
-        Collider[] hitColliders = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, -1);
+        Collider[] hitColliders = Physics.OverlapBox(gameObject.transform.position, transform.localScale, Quaternion.identity, -1);
         int i = 0;
         //Check when there is a new collider coming into contact with the box
         foreach(Collider hit in hitColliders)
@@ -71,5 +73,14 @@ public class PizzaProjectile : MonoBehaviour
         Vector3 m2 = Vector3.Lerp(arc, end, part);
 
         return Vector3.Lerp(m1, m2, part);
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        //Check that it is being run in Play Mode, so it doesn't try to draw this in Editor mode
+        if (thrown)
+            //Draw a cube where the OverlapBox is (positioned where your GameObject is as well as a size)
+            Gizmos.DrawWireCube(transform.position, transform.localScale * 2);
     }
 }

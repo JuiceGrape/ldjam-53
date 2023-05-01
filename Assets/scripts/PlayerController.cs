@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem damageEffect;
     [SerializeField] private GameOverScreen gameoverScreen;
 
+    [SerializeField] private GameObject pauseMenu;
+
+    bool gameStarted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,7 @@ public class PlayerController : MonoBehaviour
         }
 
         instance = this;
+        Time.timeScale = 0.0f;
     }
 
     private void Update()
@@ -34,6 +39,37 @@ public class PlayerController : MonoBehaviour
             cash.IncreaseValue(5.0f);
             health.DecreaseValue(5.0f);
         }
+
+        if (gameStarted && Input.GetButtonDown("Pause"))
+        {
+            TogglePause();
+        }
+    }
+
+    
+    public void TogglePause()
+    {
+        if (Car.Broken)
+            return;
+
+        gameStarted = true;
+
+        if (pauseMenu.activeSelf)
+        {
+            Time.timeScale = 1.0f;
+            pauseMenu.SetActive(false);
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            pauseMenu.SetActive(true);
+        }
+            
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public void TakeDamage(float damage, bool zombieDamage)
@@ -50,6 +86,7 @@ public class PlayerController : MonoBehaviour
         if (calculatedDamage > 0.01f)
         {
             damageEffect.Play();
+            damageEffect.GetComponent<AudioSource>().Play();
         }
         health.DecreaseValue(calculatedDamage);
 
