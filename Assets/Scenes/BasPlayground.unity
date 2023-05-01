@@ -12714,6 +12714,14 @@ PrefabInstance:
       propertyPath: gameoverScreen
       value: 
       objectReference: {fileID: 758885453}
+    - target: {fileID: 313235140, guid: 3320d060908eefa4cb5f898b97bbde2a, type: 3}
+      propertyPath: startValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 557110165, guid: 3320d060908eefa4cb5f898b97bbde2a, type: 3}
+      propertyPath: maxDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4122773876993877196, guid: 3320d060908eefa4cb5f898b97bbde2a,
         type: 3}
       propertyPath: m_Name
