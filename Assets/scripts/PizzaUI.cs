@@ -11,7 +11,7 @@ public class PizzaUI : MonoBehaviour
     public Button TruckRepairButton;
     public Button PizzaTimeButton;
 
-    public float repairCost = 10.0f;
+    public float repairCost = 5.0f;
 
     bool isOpen = false;
 
@@ -37,7 +37,8 @@ public class PizzaUI : MonoBehaviour
     public void UpdateUI()
     {
         TruckRepairButton.GetComponentInChildren<TMP_Text>().text = repairCost.ToString("f2");
-        if (PlayerController.instance.cash.GetValue() >= repairCost)
+        if (PlayerController.instance.cash.GetValue() >= repairCost 
+            && PlayerController.instance.health.GetValue() < PlayerController.instance.health.maxValue)
         {
             TruckRepairButton.interactable = true;
         }
@@ -59,8 +60,11 @@ public class PizzaUI : MonoBehaviour
     public void RepairCar()
     {
         GameStats.RegisterRepair();
-        PlayerController.instance.cash.DecreaseValue(10.0f);
+        PlayerController.instance.cash.DecreaseValue(repairCost);
+        repairCost += repairCost * 0.75f;
         PlayerController.instance.health.Reset();
+
+        UpdateUI();
     }
 
     public void PizzaTime()

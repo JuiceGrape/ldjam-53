@@ -28,6 +28,7 @@ public class GameOverScreen : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         Car.Broken = false;
+        ZombieController.LiveZombies = 0;
         SceneManager.LoadScene(0);
     }
 }

@@ -39,12 +39,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            cash.IncreaseValue(5.0f);
-            health.DecreaseValue(5.0f);
-        }
-
         if (gameStarted && Input.GetButtonDown("Pause"))
         {
             TogglePause();

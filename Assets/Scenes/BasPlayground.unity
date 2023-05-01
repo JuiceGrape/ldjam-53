@@ -8823,6 +8823,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: townhouse2_pink (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: identifier
+      value: TaLl building, pink roof, next to trees
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: townLocation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3287904528334956920, guid: b22605e56bda4804499783d82591560c,
         type: 3}
       propertyPath: m_RootOrder
