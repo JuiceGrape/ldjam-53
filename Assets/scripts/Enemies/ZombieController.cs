@@ -30,10 +30,14 @@ public class ZombieController : MonoBehaviour
         
     }
 
+    public void SetSpawnTimer(float timer)
+    {
+        spawnTimer = timer;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(LiveZombies);
         if (LiveZombies >= maxZombies)
             return;
 

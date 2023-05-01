@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sections: 20
-  maxDistance: 10
+  maxDistance: 15
   projectilePrefab: {fileID: 1839956187173981076, guid: 36175f5ec600a224095442f359ad20c1,
     type: 3}
 --- !u!1 &654372126
