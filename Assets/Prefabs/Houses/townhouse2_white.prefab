@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3806894627827098795}
   - component: {fileID: -3280675663488739560}
   - component: {fileID: 7569752959154533752}
+  - component: {fileID: 8239492451486376570}
   m_Layer: 0
   m_Name: townhouse2_white
   m_TagString: Untagged
@@ -115,3 +116,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.023000002, y: 3.548, z: 0.031000001}
   m_TimeToStationary: 0.5
+--- !u!114 &8239492451486376570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619262918427372228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641051650cda7ec4b8f592f9bb990f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  townLocation: 0
+  identifier: 

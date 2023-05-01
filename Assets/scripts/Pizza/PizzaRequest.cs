@@ -29,13 +29,11 @@ public class PizzaRequest {
 
     public void Activate()
     {
-        cachedTarget.gameObject.SetActive(true);
         isActive = true;
     }
 
     public void Deactivate()
     {
-        cachedTarget.gameObject.SetActive(false);
         isActive = false;
     }
 
@@ -46,7 +44,7 @@ public class PizzaRequest {
         retval += "1 " + PizzaTypes[Random.Range(0, PizzaTypes.Length)] + "\n";
         retval += "Location: " + cachedTarget.townLocation.ToString() + "\n";
         retval += "Identifier: " + cachedTarget.identifier + "\n";
-        retval += "Delivery instructions: Drive through cube in front of door";
+        retval += "Delivery instructions: Throw at front door";
         //retval += "Delivery instructions: Throw pizza at front door";
 
         return retval;

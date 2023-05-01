@@ -42,7 +42,7 @@ public class Car : MonoBehaviour
         Accelerate(Input.GetAxisRaw("Drive"));
         Steer(Input.GetAxisRaw("Horizontal"));
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetButton("Brake"))
         {
             Brake(1);
         }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7773500714296223749}
   - component: {fileID: -2753650340064017757}
   - component: {fileID: 6313791761255561612}
+  - component: {fileID: -3866234851797562655}
   m_Layer: 0
   m_Name: house3_orange
   m_TagString: Untagged
@@ -114,3 +115,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 2.595, z: 0.504}
   m_TimeToStationary: 0.5
+--- !u!114 &-3866234851797562655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530711593694391023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641051650cda7ec4b8f592f9bb990f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  townLocation: 0
+  identifier: 

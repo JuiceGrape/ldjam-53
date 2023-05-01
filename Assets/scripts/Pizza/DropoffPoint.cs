@@ -13,21 +13,13 @@ public enum PartOfTown
 [RequireComponent(typeof(Collider))]
 public class DropoffPoint : MonoBehaviour
 {
-    new private Collider collider;
-
     public PartOfTown townLocation;
     public string identifier;
 
-    private void Start()
-    {
-        collider = GetComponent<Collider>();
-    }
 
-    private void OnTriggerEnter(Collider other)
+    public void Score(Vector3 hitPoint)
     {
-        if (other.GetComponentInChildren<PlayerController>() != null && PizzaController.instance.HasActiveRequest())
-        {
-            PizzaController.instance.CompleteRequest(1.0f);
-        }
+        //TODO: Accuracy
+        PizzaController.instance.CompleteRequest(1.0f);
     }
 }

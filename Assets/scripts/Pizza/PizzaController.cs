@@ -11,8 +11,11 @@ public class PizzaController : MonoBehaviour
         private set;
     }
 
-    //Called whenever the pizza timer runs out.
+    //Called whenever the pizza quest fails
     public UnityEvent<PizzaRequest> OnPizzaFailed;
+
+    //Called whenever the pizza quest succeeds
+    public UnityEvent<PizzaRequest> OnPizzaSuccess;
 
     //Called whenever the pizza request is no longer valid (completed / failed)
     public UnityEvent<PizzaRequest> OnPizzaEnded;
@@ -40,10 +43,7 @@ public class PizzaController : MonoBehaviour
         {
             dropoffPoints = FindObjectsOfType<DropoffPoint>();
         }
-        foreach(var point in dropoffPoints)
-        {
-            point.gameObject.SetActive(false);
-        }
+
     }
 
     private void Update()
@@ -52,9 +52,7 @@ public class PizzaController : MonoBehaviour
         {
             if (PizzaTimer.GetValue() == PizzaTimer.minValue)
             {
-                //OnPizzaFailed.Invoke(activeRequest);
-                //OnPizzaEnded.Invoke(activeRequest);
-                //activeRequest.Deactivate();
+                FailRequest();
             }
             else
             {
@@ -90,11 +88,26 @@ public class PizzaController : MonoBehaviour
     //Accuracy is a value from 0.0f to 1.0f based on how close to the front door the pizza landed
     public void CompleteRequest(float accuracy)
     {
+        if (!HasActiveRequest())
+            return;
+
         OnPizzaEnded.Invoke(activeRequest);
+        OnPizzaSuccess.Invoke(activeRequest);
         activeRequest.Deactivate();
         float payout = CalculatePayout(accuracy);
         PlayerController.instance.cash.IncreaseValue(payout);
         GameStats.RegisterCash(payout);
+        PizzaTimer.Reset();
+    }
+
+    public void FailRequest()
+    {
+        if (!HasActiveRequest())
+            return;
+
+        OnPizzaEnded.Invoke(activeRequest);
+        OnPizzaFailed.Invoke(activeRequest);
+        activeRequest.Deactivate();
         PizzaTimer.Reset();
     }
 
