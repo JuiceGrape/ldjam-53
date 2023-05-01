@@ -15,6 +15,10 @@ public class Car : MonoBehaviour
     [SerializeField] private float minDamagingImpulse = 20000f;
     [SerializeField] private float maxDamagingImpulse = 70000f;
 
+    [SerializeField] private AudioSource audioIdle;
+    [SerializeField] private AudioSource audioDriving;
+    [SerializeField] private AudioSource audioBraking;
+
     public static bool Broken = false;
 
     public Vector3 CurrentSpeed { get; private set; }
@@ -38,6 +42,8 @@ public class Car : MonoBehaviour
         if (Broken)
         {
             Brake(1f);
+            audioIdle.enabled = false;
+            audioDriving.enabled = false;
             return;
         }
 
@@ -48,6 +54,11 @@ public class Car : MonoBehaviour
         if (Input.GetButton("Brake"))
         {
             Brake(1);
+            accelerateIsBrake = false;
+        }
+        else
+        {
+            accelerateIsBrake = true;
         }
 
         GameStats.RegisterDistance((transform.position - prevPos).magnitude / 1000.0f);
@@ -64,6 +75,17 @@ public class Car : MonoBehaviour
 
     public void Accelerate(float value)
     {
+        if (value == 0.0f && CurrentSpeed.magnitude <= 3f)
+        {
+            audioIdle.enabled = true;
+            audioDriving.enabled = false;
+        }
+        else
+        {
+            audioIdle.enabled = false;
+            audioDriving.enabled = true;
+        }
+
         float maxSpeed = Upgrades.instance.speed.CalculateValue(baseMaxSpeed);
         float accellerationForce = Upgrades.instance.accell.CalculateValue(baseAccelerationForce);
         if (accelerateIsBrake)
@@ -115,10 +137,25 @@ public class Car : MonoBehaviour
 
     public void Brake(float value)
     {
+        float correctedValue = Mathf.Abs(value);
+        if (correctedValue > 0.1f)
+        {
+            Debug.Log(CurrentSpeed.magnitude);
+        }
+
+        if (!Broken && correctedValue > 0.1f && CurrentSpeed.magnitude >= 1.0f)
+        {
+            audioBraking.enabled = true;
+        }
+        else
+        {
+            audioBraking.enabled = false;
+        }
+
         float brakingForce = Upgrades.instance.brake.CalculateValue(baseBrakingForce);
         foreach (Wheel wheel in wheels)
         {
-            wheel.SetBrake(brakingForce * Mathf.Abs(value));
+            wheel.SetBrake(brakingForce * correctedValue);
         }
     }
 
