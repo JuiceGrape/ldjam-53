@@ -52,6 +52,7 @@ MonoBehaviour:
   damageEffect: {fileID: 1049082897637631949}
   gameoverScreen: {fileID: 0}
   pauseMenu: {fileID: 0}
+  gameStarted: 0
 --- !u!114 &1054974279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6027,8 +6028,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.2801502, z: 1.5453151}
-  m_Center: {x: 0.000000002995796, y: 0.18286608, z: 0.2479223}
+  m_Size: {x: 1, y: 0.27136642, z: 1.545315}
+  m_Center: {x: -6.678198e-10, y: 0.18725798, z: 0.2479223}
 --- !u!1 &4122773877124927663
 GameObject:
   m_ObjectHideFlags: 0
