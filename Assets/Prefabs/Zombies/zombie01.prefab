@@ -4848,6 +4848,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: zombieHurtFX
       objectReference: {fileID: 0}
+    - target: {fileID: 2999582519957795014, guid: 34c603eaf84be71409748296c0f33a00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
       propertyPath: m_RootOrder
