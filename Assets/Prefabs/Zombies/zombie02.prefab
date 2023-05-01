@@ -3078,12 +3078,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToVehicle: 5
   minimumSpeed: 8
-  minChaseDistance: 5
-  maxChaseDistance: 20
+  minChaseDistance: 10
+  maxChaseDistance: 30
   minSpeed: 1.5
   maxSpeed: 3
-  minWaitTime: 10
-  maxWaitTime: 30
+  minWaitTime: 5
+  maxWaitTime: 15
   hurtFX: {fileID: 7406378131788508132}
 --- !u!54 &3556991055715723971
 Rigidbody:
