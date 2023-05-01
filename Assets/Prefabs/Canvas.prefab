@@ -1009,7 +1009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1728971757965517914}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2289894370565703538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,6 +2272,9 @@ MonoBehaviour:
 
     Throw Pizza [LB / L1]
 
+    Pause
+    [Start]
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9fb1d12bf96d6d47888ad3e1b34c055, type: 2}
@@ -2788,6 +2803,8 @@ MonoBehaviour:
     pizza [Arrow keys]
 
     Throw Pizza [E]
+
+    Pause [TAB]
 
 '
   m_isRightToLeft: 0
@@ -3609,7 +3626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.73517, y: 0}
+  m_AnchoredPosition: {x: 674.73, y: 0}
   m_SizeDelta: {x: 1349.469, y: 79.504}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7167892602020375151
@@ -5319,6 +5336,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &7816861875000764402
 GameObject:
   m_ObjectHideFlags: 0
@@ -6106,7 +6135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resource: {fileID: 0}
-  minFill: 0
+  minFill: 0.1
   maxFill: 0.9
   creepSpeed: 0.4
 --- !u!1 &8689759668556194334

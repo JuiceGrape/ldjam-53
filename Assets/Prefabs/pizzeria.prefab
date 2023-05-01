@@ -100,7 +100,7 @@ MonoBehaviour:
   OnPizzaFailed:
     m_PersistentCalls:
       m_Calls: []
-  OnPizzaEnded:
+  OnPizzaSuccess:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
@@ -115,6 +115,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnPizzaEnded:
+    m_PersistentCalls:
+      m_Calls: []
   OnPizzaStarted:
     m_PersistentCalls:
       m_Calls: []
