@@ -125,10 +125,10 @@ public class Zombie : Desctructable
 
     override protected void OnDeath(PlayerController player, Car truck, Collision collision)
     {
-        if (hurtFX != null)
-        {
-            hurtFX.SetActive(true);
-        }
+        //if (hurtFX != null)
+        //{
+        //    hurtFX.SetActive(true);
+        //}
 
         GameStats.RegisterKill();
 

@@ -11,6 +11,9 @@ public class Car : MonoBehaviour
     [SerializeField] private float baseSteeringAngle = 25.0f;
     [SerializeField] private float baseMaxSpeed = 20.0f;
     [SerializeField] private bool accelerateIsBrake = true;
+    [SerializeField] private float maxcrashDamage = 40;
+    [SerializeField] private float minDamagingImpulse = 20000f;
+    [SerializeField] private float maxDamagingImpulse = 70000f;
 
     public static bool Broken = false;
 
@@ -117,6 +120,31 @@ public class Car : MonoBehaviour
         {
             wheel.SetBrake(brakingForce * Mathf.Abs(value));
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.GetComponent<Zombie>() != null
+            || collision.collider.tag == "InvisibleWall")
+        {
+            return;
+        }
+
+        if (collision.impulse.magnitude > minDamagingImpulse)
+        {
+            float damage = UnitIntervalRange(minDamagingImpulse, maxDamagingImpulse, 0, maxcrashDamage, collision.impulse.magnitude);
+            Debug.Log(collision.impulse.magnitude);
+            Debug.Log(damage);
+            PlayerController.instance.TakeDamage(damage, false);
+        }
+    }
+
+    float UnitIntervalRange(float stageStartRange, float stageFinishRange, float newStartRange, float newFinishRange, float floatingValue)
+    {
+        float outRange = Mathf.Abs(newFinishRange - newStartRange);
+        float inRange = Mathf.Abs(stageFinishRange - stageStartRange);
+        float range = (outRange / inRange);
+        return (newStartRange + (range * (floatingValue - stageStartRange)));
     }
 
 }

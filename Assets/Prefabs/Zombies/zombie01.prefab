@@ -3075,7 +3075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdcb8e4be4e9b44bb19c351f3b7b87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToVehicle: 2
+  damageToVehicle: 5
   minimumSpeed: 8
   minChaseDistance: 5
   maxChaseDistance: 20
@@ -4843,45 +4843,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5086959188254852792}
     m_Modifications:
-    - target: {fileID: 635541880477840625, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297442073288526043, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2999582519957795014, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
       propertyPath: m_Name
       value: zombieHurtFX
       objectReference: {fileID: 0}
-    - target: {fileID: 2999582519957795014, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
@@ -4896,7 +4866,7 @@ PrefabInstance:
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
@@ -4911,12 +4881,12 @@ PrefabInstance:
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
         type: 3}
@@ -4932,26 +4902,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4995961047270045173, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5022251810740221786, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131229775885906730, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292769211635917963, guid: 34c603eaf84be71409748296c0f33a00,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34c603eaf84be71409748296c0f33a00, type: 3}
