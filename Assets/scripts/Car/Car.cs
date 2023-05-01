@@ -166,8 +166,6 @@ public class Car : MonoBehaviour
         if (collision.impulse.magnitude > minDamagingImpulse)
         {
             float damage = UnitIntervalRange(minDamagingImpulse, maxDamagingImpulse, 0, maxcrashDamage, collision.impulse.magnitude);
-            Debug.Log(collision.impulse.magnitude);
-            Debug.Log(damage);
             PlayerController.instance.TakeDamage(damage, false);
         }
     }

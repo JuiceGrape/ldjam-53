@@ -13,7 +13,7 @@ public class PizzaRequest {
         "Raw Pizza",
         "Tripledecker Funtime",
         "Pizza Hawaii",
-        "Pizza Boerlusconi",
+        "Pizza Berlusconi",
         "Pizza Doner",
         "Pizza Spinaci"
     };

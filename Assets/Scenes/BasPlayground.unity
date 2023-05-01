@@ -332,7 +332,7 @@ PrefabInstance:
         type: 3}
       propertyPath: face
       value: 
-      objectReference: {fileID: 21300000, guid: dae33700bd23f76409a80bf78fdb8a42,
+      objectReference: {fileID: 21300000, guid: 35a1d0bfe4e226f4dbd697b4a96bea4d,
         type: 3}
     - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
       propertyPath: personName
-      value: Lilly
+      value: Bruce
       objectReference: {fileID: 0}
     - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
@@ -657,6 +657,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1850434898, guid: 02edfddca13ee7142969147de699e154, type: 3}
+      propertyPath: m_Height
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850434898, guid: 02edfddca13ee7142969147de699e154, type: 3}
+      propertyPath: m_Radius
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850434898, guid: 02edfddca13ee7142969147de699e154, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850434898, guid: 02edfddca13ee7142969147de699e154, type: 3}
+      propertyPath: m_Center.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850434898, guid: 02edfddca13ee7142969147de699e154, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1665140621920293895, guid: 02edfddca13ee7142969147de699e154,
         type: 3}
       propertyPath: m_RootOrder
@@ -1061,8 +1081,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 7eeb80ac6b9266c4aa830eec83ff499f,
+        type: 3}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
       propertyPath: identifier
       value: Lonesome green roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: personName
+      value: Sam
       objectReference: {fileID: 0}
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
@@ -2712,8 +2743,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: dcb35542eaeca8a468e9a9bac397540b,
+        type: 3}
+    - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
+        type: 3}
       propertyPath: identifier
       value: Blue roof next to pink roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
+        type: 3}
+      propertyPath: personName
+      value: Rex
       objectReference: {fileID: 0}
     - target: {fileID: 5214021297453732146, guid: 5ee9d55c37299b44e9f803c773a0c107,
         type: 3}
@@ -3055,8 +3097,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 2991ce8e1d671774eaadb5040759dddb,
+        type: 3}
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
       propertyPath: identifier
       value: Tall building next to downtown
+      objectReference: {fileID: 0}
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
+      propertyPath: personName
+      value: John
       objectReference: {fileID: 0}
     - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
         type: 3}
@@ -3217,7 +3270,7 @@ PrefabInstance:
         type: 3}
       propertyPath: face
       value: 
-      objectReference: {fileID: 21300000, guid: e5600378dd761e64d9423790c482bf36,
+      objectReference: {fileID: 21300000, guid: 0185819b63e706646bed5b0701ad0864,
         type: 3}
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
@@ -3227,7 +3280,7 @@ PrefabInstance:
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
       propertyPath: personName
-      value: Robert
+      value: Akiko
       objectReference: {fileID: 0}
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
@@ -3895,8 +3948,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: c9f75cdb792b3fa4e9f7901b3f2a0cae,
+        type: 3}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
       propertyPath: identifier
       value: Small and pink roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: personName
+      value: Not Pizzombie
       objectReference: {fileID: 0}
     - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
         type: 3}
@@ -4050,8 +4114,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 8da0242184d18f840882650f740e0309,
+        type: 3}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
       propertyPath: identifier
       value: Large brown building next to large broken car
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: personName
+      value: Lily
       objectReference: {fileID: 0}
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
@@ -4242,7 +4317,7 @@ PrefabInstance:
         type: 3}
       propertyPath: face
       value: 
-      objectReference: {fileID: 21300000, guid: 70632ddfe8e71b04b8f90ef7e29a9e98,
+      objectReference: {fileID: 21300000, guid: 53a6b55f7b72dbc4abdb12e6ebbe13eb,
         type: 3}
     - target: {fileID: -6775446617803171319, guid: b4a92702f5d9d4644a34d1b288fc9953,
         type: 3}
@@ -4252,7 +4327,7 @@ PrefabInstance:
     - target: {fileID: -6775446617803171319, guid: b4a92702f5d9d4644a34d1b288fc9953,
         type: 3}
       propertyPath: personName
-      value: Anna
+      value: Britney
       objectReference: {fileID: 0}
     - target: {fileID: -6775446617803171319, guid: b4a92702f5d9d4644a34d1b288fc9953,
         type: 3}
@@ -5037,8 +5112,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: d89819f5bd1ac2846962bc923fa81530,
+        type: 3}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
       propertyPath: identifier
       value: Small pink and green building surrounded by other buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: personName
+      value: Raymond
       objectReference: {fileID: 0}
     - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
         type: 3}
@@ -5209,7 +5295,7 @@ PrefabInstance:
         type: 3}
       propertyPath: face
       value: 
-      objectReference: {fileID: 21300000, guid: 372e7b39fc8f34549ac25d8757965a2c,
+      objectReference: {fileID: 21300000, guid: 018e94addcbeb36458e262d880fe579c,
         type: 3}
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
@@ -5219,7 +5305,7 @@ PrefabInstance:
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
       propertyPath: personName
-      value: Definitely not a pizzombie
+      value: Ferguson
       objectReference: {fileID: 0}
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
@@ -5393,8 +5479,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d654733b72e8ba4982fc914e365e13d,
+        type: 3}
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
       propertyPath: identifier
       value: Small blue and brown building with flat roof
+      objectReference: {fileID: 0}
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
+      propertyPath: personName
+      value: Gertie
       objectReference: {fileID: 0}
     - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
         type: 3}
@@ -6652,8 +6749,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: e84991b1fd527bd4f8bf67cfb1cd10f8,
+        type: 3}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
       propertyPath: identifier
       value: Tall blue building, middle of hill
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: personName
+      value: Stuart
       objectReference: {fileID: 0}
     - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
         type: 3}
@@ -6764,8 +6872,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 7905005f5db4ff646821092b9fe389ad,
+        type: 3}
+    - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
+        type: 3}
       propertyPath: identifier
       value: Blue roof next to large rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 993627221136549250, guid: e462c5882a81b004bb7c23d4437dfb85,
+        type: 3}
+      propertyPath: personName
+      value: Sanna
       objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: e462c5882a81b004bb7c23d4437dfb85,
         type: 3}
@@ -7168,8 +7287,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 64acbbf53874227488b77d35bd54a127,
+        type: 3}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
       propertyPath: identifier
       value: Tall brown building next to 2 broken tall buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
+        type: 3}
+      propertyPath: personName
+      value: Pete
       objectReference: {fileID: 0}
     - target: {fileID: 6567358140105476952, guid: d02060820763bb144988fa4cc173bfed,
         type: 3}
@@ -7242,8 +7372,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6591571685151040825, guid: f545706a862c19f4e804814031d9f64e,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b01dc5b90abb5340b64b694b833e4a2,
+        type: 3}
+    - target: {fileID: 6591571685151040825, guid: f545706a862c19f4e804814031d9f64e,
+        type: 3}
       propertyPath: identifier
       value: Orange roof, next to downtown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591571685151040825, guid: f545706a862c19f4e804814031d9f64e,
+        type: 3}
+      propertyPath: personName
+      value: Gagnesh
       objectReference: {fileID: 0}
     - target: {fileID: 6591571685151040825, guid: f545706a862c19f4e804814031d9f64e,
         type: 3}
@@ -7793,8 +7934,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 2166203ef365f4749bcf05ca13ea4039,
+        type: 3}
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
       propertyPath: identifier
       value: Tall blue and brown building with flat roof
+      objectReference: {fileID: 0}
+    - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
+        type: 3}
+      propertyPath: personName
+      value: Rocky
       objectReference: {fileID: 0}
     - target: {fileID: -5041135094702172007, guid: 8049ff70fa1df77448f314a26c910146,
         type: 3}
@@ -7887,8 +8039,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8816835282869701862, guid: 89a4124f38175f348927e358d1a71d68,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c25a48b853c20147b1cb950cefe6053,
+        type: 3}
+    - target: {fileID: -8816835282869701862, guid: 89a4124f38175f348927e358d1a71d68,
+        type: 3}
       propertyPath: identifier
       value: On top of the hill
+      objectReference: {fileID: 0}
+    - target: {fileID: -8816835282869701862, guid: 89a4124f38175f348927e358d1a71d68,
+        type: 3}
+      propertyPath: personName
+      value: Jorma
       objectReference: {fileID: 0}
     - target: {fileID: -8816835282869701862, guid: 89a4124f38175f348927e358d1a71d68,
         type: 3}
@@ -8047,8 +8210,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 0eaba97f4a8d9a44283105a50fa4d796,
+        type: 3}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
       propertyPath: identifier
       value: Green building flanked by 2 blue buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: personName
+      value: Gordon
       objectReference: {fileID: 0}
     - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
         type: 3}
@@ -8299,8 +8473,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: d3bbd640e87ba6e41bea53612921a986,
+        type: 3}
+    - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
+        type: 3}
       propertyPath: identifier
       value: Blue roof near the ramp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403540360981847907, guid: 5ee9d55c37299b44e9f803c773a0c107,
+        type: 3}
+      propertyPath: personName
+      value: Josie
       objectReference: {fileID: 0}
     - target: {fileID: 5214021297453732146, guid: 5ee9d55c37299b44e9f803c773a0c107,
         type: 3}
@@ -8869,8 +9054,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ad82394380d76f458cfebaa340f4e1a,
+        type: 3}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
       propertyPath: identifier
       value: TaLl building, pink roof, next to trees
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
+        type: 3}
+      propertyPath: personName
+      value: Margo
       objectReference: {fileID: 0}
     - target: {fileID: 2391322382982453107, guid: b22605e56bda4804499783d82591560c,
         type: 3}
@@ -9444,8 +9640,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 6125794391260d3478c066d2547feff8,
+        type: 3}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
       propertyPath: identifier
       value: Green and brown building in center of downtown area
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: personName
+      value: Lakshmi
       objectReference: {fileID: 0}
     - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
         type: 3}
@@ -9613,8 +9820,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cf5791792da3b04b81af97b7cac4fb0,
+        type: 3}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
       propertyPath: identifier
       value: Blue roof blue building, pointed roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: personName
+      value: Jeannie
       objectReference: {fileID: 0}
     - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
         type: 3}
@@ -10669,8 +10887,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 43907b07d3f7a7f409e24c08bb1ef895,
+        type: 3}
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
       propertyPath: identifier
       value: Tall building next to 3 abandoned buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
+        type: 3}
+      propertyPath: personName
+      value: Patrick
       objectReference: {fileID: 0}
     - target: {fileID: -2779060331878374075, guid: b2363f5dde79511419a4383db02b04b1,
         type: 3}
@@ -11043,8 +11272,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8802227792334042920, guid: 2cc11b297303206439e9f9ac8d332d67,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 4c24e43d45a1ab6458aab07cfc57247e,
+        type: 3}
+    - target: {fileID: 8802227792334042920, guid: 2cc11b297303206439e9f9ac8d332d67,
+        type: 3}
       propertyPath: identifier
       value: Pink roof next to blue roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802227792334042920, guid: 2cc11b297303206439e9f9ac8d332d67,
+        type: 3}
+      propertyPath: personName
+      value: Bas
       objectReference: {fileID: 0}
     - target: {fileID: 8877330651414033338, guid: 2cc11b297303206439e9f9ac8d332d67,
         type: 3}
@@ -11068,8 +11308,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: bfa6f62276592fa4eabedf8d90fba2cb,
+        type: 3}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
       propertyPath: identifier
       value: Green roof on the edge of the downtown area
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
+        type: 3}
+      propertyPath: personName
+      value: Mona
       objectReference: {fileID: 0}
     - target: {fileID: 1475808877350255049, guid: 73da078d9936e5949a94fdfd46335323,
         type: 3}
@@ -11222,8 +11473,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: ed3680d5c6328e34bb012db96f94396f,
+        type: 3}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
       propertyPath: identifier
       value: Green and brown building next to many broken buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
+        type: 3}
+      propertyPath: personName
+      value: Melanie
       objectReference: {fileID: 0}
     - target: {fileID: 7345122421815091065, guid: b878ee5d527cf4946be20f0a15628cce,
         type: 3}
@@ -11328,8 +11590,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
         type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 21300000, guid: 01ca98d390a787a4b954a10f980acd32,
+        type: 3}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
       propertyPath: identifier
       value: Large blue roof next to small pink building
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
+        type: 3}
+      propertyPath: personName
+      value: Paula
       objectReference: {fileID: 0}
     - target: {fileID: 8126918026401097144, guid: 55f4bf49d28904c489de38ddd8521333,
         type: 3}
@@ -11424,7 +11697,7 @@ PrefabInstance:
         type: 3}
       propertyPath: face
       value: 
-      objectReference: {fileID: 21300000, guid: 3a0c527d7f890d64a9b56b086e6e766a,
+      objectReference: {fileID: 21300000, guid: 00af694cc7a237d4e886da98107eb037,
         type: 3}
     - target: {fileID: -6533872967993443961, guid: 929a67c115f217f44b373c1c391e0d56,
         type: 3}
@@ -11434,7 +11707,7 @@ PrefabInstance:
     - target: {fileID: -6533872967993443961, guid: 929a67c115f217f44b373c1c391e0d56,
         type: 3}
       propertyPath: personName
-      value: Persiphone
+      value: Enrique
       objectReference: {fileID: 0}
     - target: {fileID: 1619262918427372228, guid: 929a67c115f217f44b373c1c391e0d56,
         type: 3}
@@ -12549,6 +12822,39 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 47048228, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 47048228, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 47048228, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -148.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 47048228, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -123.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 47048229, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 47048229, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c9f75cdb792b3fa4e9f7901b3f2a0cae,
+        type: 3}
+    - target: {fileID: 47048229, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 47048229, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 636875283, guid: f089cf5732d28904ea29ddb760ff0714, type: 3}
       propertyPath: resource
       value: 
@@ -12610,7 +12916,7 @@ PrefabInstance:
     - target: {fileID: 3077030715399462137, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3077030716099185768, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
@@ -12620,7 +12926,7 @@ PrefabInstance:
     - target: {fileID: 3077030716224854950, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3077030716349806176, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
@@ -12742,6 +13048,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 829365017}
+    - target: {fileID: 7859751617608488981, guid: f089cf5732d28904ea29ddb760ff0714,
+        type: 3}
+      propertyPath: repairCost
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7944850430576022808, guid: f089cf5732d28904ea29ddb760ff0714,
         type: 3}
       propertyPath: m_AnchorMax.y
