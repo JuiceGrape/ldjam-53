@@ -135,6 +135,7 @@ public class Zombie : Desctructable
         agent.enabled = false;
         GetComponent<Collider>().isTrigger = true;
         dead = true;
+        ZombieController.LiveZombies--;
 
         Vector3 direction = transform.position - truck.transform.position;
         StartCoroutine(BlowAway(-direction.normalized, truck.CurrentSpeed.magnitude / 20));

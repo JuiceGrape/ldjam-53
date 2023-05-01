@@ -54,6 +54,23 @@ public class PizzaRequest {
     {
         return details;
     }
+
+    public float GetOrderMultiplier()
+    {
+        switch(cachedTarget.townLocation)
+        {
+            case PartOfTown.Downtown:
+                return 0.75f;
+            case PartOfTown.Hillside:
+                return 3f;
+            case PartOfTown.Riverside:
+                return 1f;
+            case PartOfTown.Suburbs:
+                return 1.5f;
+            default:
+                return 1f;
+        }
+    }
     
 
 }

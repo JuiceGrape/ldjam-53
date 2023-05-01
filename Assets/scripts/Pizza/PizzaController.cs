@@ -70,7 +70,7 @@ public class PizzaController : MonoBehaviour
         payoutWithMods *= accuracy;
         tipWithMods *= PizzaTimer.GetValue() / PizzaTimer.maxValue;
 
-        return payoutWithMods + tipWithMods;
+        return (payoutWithMods + tipWithMods) * activeRequest.GetOrderMultiplier();
     }
 
     public PizzaRequest generateRequest()

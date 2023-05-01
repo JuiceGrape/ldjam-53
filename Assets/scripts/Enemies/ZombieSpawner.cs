@@ -37,6 +37,7 @@ public class ZombieSpawner : MonoBehaviour
 
     public void Spawn()
     {
+        ZombieController.LiveZombies++;
         Zombie zombie = Instantiate(spawnableZombies[Random.Range(0, spawnableZombies.Length)]);
         zombie.transform.position = RandomNavSphere(transform.position, SpawnRange, -1) + SpawnOffset;
     }

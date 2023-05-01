@@ -29,8 +29,8 @@ public class Upgrades : MonoBehaviour
 
     public Upgrade spikes = new Upgrade("Bumper Spikes", 2, 100.0f, 4.0f, -0.5f);
 
-    public Upgrade tips = new Upgrade("Tip amount", 10, 10.0f, 1.0f, 1.0f);
-    public Upgrade wages = new Upgrade("Get a raise", 10, 10.0f, 1.0f, 0.5f);
+    public Upgrade tips = new Upgrade("Tip amount", 10, 10.0f, 1.0f, 0.5f);
+    public Upgrade wages = new Upgrade("Get a raise", 10, 10.0f, 1.0f, 0.25f);
     //public Upgrade patience = new Upgrade("Customer patience", 10, 10.0f, 2.0f);
 
     private Dictionary<UpgradeType, Upgrade> upgradeDict;

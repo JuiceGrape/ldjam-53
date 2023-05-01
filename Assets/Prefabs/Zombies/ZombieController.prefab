@@ -46,4 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTimer: 5
   timePassed: 0
+  zombieRushTimer: 60
+  zombieRushDuration: 10
+  zombieRushSpawnTimer: 0.5
+  rushTimePassed: 0
+  rushActive: 0
   spawners: []
+  maxZombies: 500

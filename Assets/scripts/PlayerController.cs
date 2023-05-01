@@ -18,7 +18,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject pauseMenu;
 
-    bool gameStarted = false;
+    public bool gameStarted = false;
+
+    private Vector3 startPos;
+    private Quaternion startRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,8 @@ public class PlayerController : MonoBehaviour
 
         instance = this;
         Time.timeScale = 0.0f;
+        startPos = transform.parent.position;
+        startRotation = transform.parent.rotation;
     }
 
     private void Update()
@@ -70,6 +75,15 @@ public class PlayerController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ResetPosition()
+    {
+        transform.parent.position = startPos;
+        transform.parent.rotation = startRotation;
+        transform.parent.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        health.SetValue(10.0f);
+        TogglePause();
     }
 
     public void TakeDamage(float damage, bool zombieDamage)

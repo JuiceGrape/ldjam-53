@@ -138,10 +138,6 @@ public class Car : MonoBehaviour
     public void Brake(float value)
     {
         float correctedValue = Mathf.Abs(value);
-        if (correctedValue > 0.1f)
-        {
-            Debug.Log(CurrentSpeed.magnitude);
-        }
 
         if (!Broken && correctedValue > 0.1f && CurrentSpeed.magnitude >= 1.0f)
         {
