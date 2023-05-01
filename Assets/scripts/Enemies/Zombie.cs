@@ -131,7 +131,7 @@ public class Zombie : Desctructable
         //}
 
         GameStats.RegisterKill();
-
+        GetComponent<AudioSource>()?.Play();
         agent.enabled = false;
         GetComponent<Collider>().isTrigger = true;
         dead = true;

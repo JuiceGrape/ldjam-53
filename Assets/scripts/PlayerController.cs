@@ -86,6 +86,7 @@ public class PlayerController : MonoBehaviour
         if (calculatedDamage > 0.01f)
         {
             damageEffect.Play();
+            damageEffect.GetComponent<AudioSource>().Play();
         }
         health.DecreaseValue(calculatedDamage);
 
